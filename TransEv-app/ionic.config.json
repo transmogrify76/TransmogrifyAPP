@@ -1,0 +1,7 @@
+{
+  "name": "TransEv-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
