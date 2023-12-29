@@ -1,5 +1,5 @@
 ion-card {
-    margin: 20px;
+    margin-bottom: 20px;
   }
   
   ion-card img {
@@ -9,16 +9,33 @@ ion-card {
   }
   
   ion-card-header {
-    font-size: 1.5em;
-    font-weight: bold;
+    ion-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  
+  ion-card-content {
+    text-align: center;
   }
   
   ion-list {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
-  ion-item {
-    --ion-text-color: #2c3e50;
-    font-weight: bold;
+  .button-container {
+    ion-button {
+      margin-top: 10px;
+    }
+  }
+  
+  .ion-text-center {
+    text-align: center;
+    margin-top: 16px;
+  
+    a {
+      color: #3880ff;
+      text-decoration: underline;
+    }
   }
   

@@ -1,19 +1,19 @@
 <ion-header>
-  <ion-toolbar color="#FFF">
+  <ion-toolbar color="light">
     <ion-title>
       <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <ion-card>
     <img src="https://www.technotification.com/wp-content/uploads/2021/07/electric-car.jpg" alt="Charging Station">
     <ion-card-header>
-      Welcome to EV Charging Solutions
+      <ion-title class="ion-text-center">Welcome to TransEV Charging Solutions</ion-title>
     </ion-card-header>
     <ion-card-content>
-      Discover convenient and sustainable charging options for your electric vehicle.
+      <p class="ion-text-center">Discover convenient and sustainable charging options for your electric vehicle.</p>
     </ion-card-content>
   </ion-card>
 
@@ -37,5 +37,9 @@
     <ion-button expand="full" color="secondary" routerLink="/login">
       Login
     </ion-button>
+  </div>
+
+  <div class="ion-text-center">
+    <p>New user? <a routerLink="/signup">Sign up here</a></p>
   </div>
 </ion-content>
