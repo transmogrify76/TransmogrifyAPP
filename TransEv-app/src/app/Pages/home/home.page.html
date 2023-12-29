@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="#FFF">
+    <ion-title>
+      <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="https://www.technotification.com/wp-content/uploads/2021/07/electric-car.jpg" alt="Charging Station">
+    <ion-card-header>
+      Welcome to EV Charging Solutions
+    </ion-card-header>
+    <ion-card-content>
+      Discover convenient and sustainable charging options for your electric vehicle.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item button routerLink="/stations">
+      <ion-icon name="car-charging-outline" slot="start"></ion-icon>
+      Find Charging Stations
+    </ion-item>
+    
+    <ion-item button routerLink="/map">
+      <ion-icon name="map-outline" slot="start"></ion-icon>
+      Charging Station Map
+    </ion-item>
+  </ion-list>
+
+  <!-- Sign-up and Login Buttons -->
+  <div class="button-container">
+    <ion-button expand="full" color="primary" routerLink="/signup">
+      Sign Up
+    </ion-button>
+    <ion-button expand="full" color="secondary" routerLink="/login">
+      Login
+    </ion-button>
+  </div>
+</ion-content>
