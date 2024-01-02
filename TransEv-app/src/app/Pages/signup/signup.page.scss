@@ -2,12 +2,6 @@ ion-card {
     margin-bottom: 20px;
   }
   
-  ion-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
   ion-card-header {
     ion-title {
       font-size: 1.5em;
@@ -15,18 +9,12 @@ ion-card {
     }
   }
   
-  ion-card-content {
-    text-align: center;
-  }
-  
   ion-list {
     margin-bottom: 20px;
   }
   
-  .button-container {
-    ion-button {
-      margin-top: 10px;
-    }
+  ion-button {
+    margin-top: 10px;
   }
   
   .ion-text-center {

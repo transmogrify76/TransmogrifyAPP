@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="#FFF">
+    <ion-title>
+      <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" color="primary" [disabled]="!loginForm.valid">Login</ion-button>
+  </form>
+
+  <div class="ion-text-center">
+    <p>New user? <a routerLink="/signup">Sign up here</a></p>
+  </div>
+
+  <!-- Display error message -->
+  <div *ngIf="loginError" class="ion-text-center ion-padding">
+    <p style="color: red;">Username or password is invalid. Please try again.</p>
+  </div>
+</ion-content>
