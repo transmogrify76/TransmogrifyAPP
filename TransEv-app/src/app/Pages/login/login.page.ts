@@ -1,19 +1,29 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.page.html',
-  styleUrls: ['./login.page.scss'],
+  templateUrl: 'login.page.html',
+  styleUrls: ['login.page.scss'],
 })
 export class LoginPage {
-  username: string = ''; // Add an initializer
-  password: string = ''; // Add an initializer
+  username: string ='';
+  password: string ='';
+  loginError: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   login() {
-    // Implement your login logic here
-    console.log('Login clicked');
-    // You can add your authentication logic here
+    // For demonstration purposes, set username and password to 'admin'
+    const validUsername = 'admin';
+    const validPassword = 'admin';
+
+    if (this.username === validUsername && this.password === validPassword) {
+      // Successful login, navigate to the landing page
+      this.router.navigate(['/landing']);
+    } else {
+      // Invalid login, display error message
+      this.loginError = true;
+    }
   }
 }

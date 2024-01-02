@@ -1,0 +1,40 @@
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-title class="ion-text-center">Sign Up</ion-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form #signupForm="ngForm" (ngSubmit)="signup()" novalidate>
+
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">Full Name</ion-label>
+            <ion-input type="text" [(ngModel)]="fullName" name="fullName" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" [(ngModel)]="email" name="email" required email></ion-input>
+            <!-- 'email' attribute for email validation -->
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" [(ngModel)]="password" name="password" required minlength="8"></ion-input>
+            <!-- 'minlength' attribute for minimum length validation -->
+          </ion-item>
+        </ion-list>
+
+        <div class="ion-text-center">
+          <ion-button expand="full" color="primary" type="submit" [disabled]="!signupForm.valid">Sign Up</ion-button>
+        </div>
+
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-text-center">
+    <p>Already have an account? <a routerLink="/login">Login here</a></p>
+  </div>
+</ion-content>

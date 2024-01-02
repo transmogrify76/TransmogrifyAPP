@@ -1,0 +1,101 @@
+<!-- get-started.page.html -->
+
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Hi,User !</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <!-- Add your menu items here -->
+    <ion-list>
+      <ion-item (click)="navigateToPage('/home')" lines="none">
+        <ion-icon slot="start" name="home" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        Home
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/about')" lines="none">
+        <ion-icon slot="start" name="person" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        Account Details
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/locator')" lines="none">
+        <ion-icon slot="start" name="location" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        CP Locator
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/wallet')" lines="none">
+        <ion-icon slot="start" name="wallet" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        Wallet
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/scan-qr')" lines="none">
+        <ion-icon slot="start" name="qr-code" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        Scan QR
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/vehicles')" lines="none">
+        <ion-icon slot="start" name="car" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        My Vehicles
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/history')" lines="none">
+        <ion-icon slot="start" name="time" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        History
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/bookings')" lines="none">
+        <ion-icon slot="start" name="calendar" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        My Bookings
+      </ion-item>
+    
+      <ion-item (click)="navigateToPage('/bookings')" lines="none">
+        <ion-icon slot="start" name="exit" style="font-size: 24px;" color="#8EB03E"></ion-icon>
+        Sign Out
+      </ion-item>
+    </ion-list>
+    
+      
+      <!-- Add more menu items as needed -->
+    
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar color="#FFF">
+    <ion-buttons slot="start">
+      <!-- Open the side menu when this button is clicked -->
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Get Started
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" id="main-content">
+  <form (ngSubmit)="searchChargingStation()">
+    <ion-item>
+      <ion-label position="floating">Enter Location</ion-label>
+      <ion-input type="text" [(ngModel)]="location" name="location" required></ion-input>
+    </ion-item>
+
+    <!-- Add other search criteria if needed -->
+
+    <ion-button expand="full" type="submit" color="primary">Search Charging Stations</ion-button>
+  </form>
+
+  <!-- Display search results -->
+  <ion-list *ngIf="chargingStations && chargingStations.length > 0">
+    <ion-item *ngFor="let station of chargingStations">
+      <ion-label>{{ station.name }}</ion-label>
+      <p>{{ station.location }}</p>
+      <!-- Add other properties as needed -->
+    </ion-item>
+  </ion-list>
+
+  <!-- Display a message if no charging stations are found -->
+  <div *ngIf="chargingStations && chargingStations.length === 0" class="ion-text-center">
+    <p>No charging stations found in the provided location.</p>
+  </div>
+</ion-content>
