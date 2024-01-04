@@ -5,4 +5,4 @@ export interface ChargingStation {
     location: string;
     // Add other relevant properties
   }
-  
+   
