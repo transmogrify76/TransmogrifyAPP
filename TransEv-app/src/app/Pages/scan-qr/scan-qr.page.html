@@ -1,0 +1,22 @@
+<!-- scan-qr.page.html -->
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Scan QR Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="scan-container">
+    <ion-icon name="qr-code-outline" class="qr-icon"></ion-icon>
+    <ion-button expand="full" (click)="scanQRCode()">Scan QR Code</ion-button>
+  </div>
+
+  <div *ngIf="scannedData" class="result-container">
+    <h3>Scanned Result:</h3>
+    <p>{{ scannedData }}</p>
+  </div>
+</ion-content>

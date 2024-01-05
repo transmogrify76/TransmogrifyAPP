@@ -15,7 +15,17 @@ export class GetStartedPage {
   chargingStations: ChargingStation[] = [];
 
   constructor(private router: Router, private chargingStationService: ChargingStationService) {}
-
+  signOut() {
+    // Perform any necessary sign-out logic
+    // Navigate to the login page
+    this.navigateToPage('/login');
+  }
+  accountDetails(){
+    this.navigateToPage('/account-details');
+  }
+  scanQRCode(){
+    this.navigateToPage('/scan-qr');
+  }
   searchChargingStation() {
     this.chargingStationService.getChargingStations(this.location)
       .pipe(

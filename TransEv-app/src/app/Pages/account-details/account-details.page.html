@@ -1,0 +1,46 @@
+<!-- account-details.page.html -->
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Account Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="profile-card">
+    <ion-card-header>
+      <ion-card-title>User Information</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Profile Picture Section -->
+      <div class="profile-picture">
+        <ion-avatar>
+          <ion-img src="https://cdn1.iconfinder.com/data/icons/user-avatars-2/300/10-512.png" alt="Profile Picture"></ion-img>
+        </ion-avatar>
+      </div>
+
+      <!-- Name and Email Section -->
+      <ion-item lines="none">
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input type="text" value="{{ dummyUser.name }}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="email" value="{{ dummyUser.email }}" disabled></ion-input>
+      </ion-item>
+
+      <!-- Upload Profile Picture Section -->
+      <ion-button fill="clear" expand="full" (click)="uploadProfilePicture()" class="upload-button">
+        <ion-icon name="cloud-upload-outline"></ion-icon>
+        Upload Profile Picture
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" color="primary" (click)="signOut()">Sign Out</ion-button>
+</ion-content>
