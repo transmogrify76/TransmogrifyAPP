@@ -14,7 +14,7 @@
         Home
       </ion-item>
     
-      <ion-item (click)="navigateToPage('/about')" lines="none">
+      <ion-item (click)="accountDetails()" lines="none">
         <ion-icon slot="start" name="person" style="font-size: 24px;" color="#8EB03E"></ion-icon>
         Account Details
       </ion-item>
@@ -29,7 +29,7 @@
         Wallet
       </ion-item>
     
-      <ion-item (click)="navigateToPage('/scan-qr')" lines="none">
+      <ion-item (click)="scanQRCode()" lines="none">
         <ion-icon slot="start" name="qr-code" style="font-size: 24px;" color="#8EB03E"></ion-icon>
         Scan QR
       </ion-item>
@@ -49,7 +49,7 @@
         My Bookings
       </ion-item>
     
-      <ion-item (click)="navigateToPage('/bookings')" lines="none">
+      <ion-item (click)="signOut()" lines="none">
         <ion-icon slot="start" name="exit" style="font-size: 24px;" color="#8EB03E"></ion-icon>
         Sign Out
       </ion-item>

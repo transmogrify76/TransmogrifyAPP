@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'forget-password',
     loadChildren: () => import('./Pages/forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
   },
+  {
+    path: 'account-details',
+    loadChildren: () => import('./Pages/account-details/account-details.module').then( m => m.AccountDetailsPageModule)
+  },
+  {
+    path: 'scan-qr',
+    loadChildren: () => import('./Pages/scan-qr/scan-qr.module').then( m => m.ScanQRPageModule)
+  },
   
   
 ];
