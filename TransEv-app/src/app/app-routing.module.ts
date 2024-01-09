@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: 'scan-qr',
     loadChildren: () => import('./Pages/scan-qr/scan-qr.module').then( m => m.ScanQRPageModule)
+  },  {
+    path: 'wallet',
+    loadChildren: () => import('./Pages/wallet/wallet.module').then( m => m.WalletPageModule)
   },
+
   
   
 ];
