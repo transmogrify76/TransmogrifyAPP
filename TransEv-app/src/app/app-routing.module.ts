@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'wallet',
     loadChildren: () => import('./Pages/wallet/wallet.module').then( m => m.WalletPageModule)
   },
+  {
+    path: 'payment-history',
+    loadChildren: () => import('./Pages/payment-history/payment-history.module').then( m => m.PaymentHistoryPageModule)
+  },
 
   
   

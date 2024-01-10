@@ -1,0 +1,33 @@
+.payment_title{
+    font-family: Montserrat;
+    color: #33cc33;
+    font-size: x-large;
+    text-align: center;
+    
+}
+.payment-item {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  
+    ion-icon {
+      color: #3880ff;
+    }
+  
+    h2 {
+      color: #333;
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      color: #777;
+      margin: 5px 0;
+    }
+  
+    .amount {
+      color: #33cc33; /* or your preferred color */
+      font-weight: bold;
+    }
+  }
+  
