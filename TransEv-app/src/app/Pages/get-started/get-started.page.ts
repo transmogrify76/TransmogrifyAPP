@@ -26,6 +26,9 @@ export class GetStartedPage {
   scanQRCode(){
     this.navigateToPage('/scan-qr');
   }
+  paymentHistory(){
+    this.navigateToPage('/payment-history');
+  }
   searchChargingStation() {
     this.chargingStationService.getChargingStations(this.location)
       .pipe(

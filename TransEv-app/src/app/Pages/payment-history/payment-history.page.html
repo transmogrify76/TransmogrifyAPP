@@ -1,0 +1,29 @@
+<!-- payment-history.page.html -->
+
+<ion-header>
+  <ion-toolbar color="#FFF">
+    <ion-title>
+      <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="payment_title">PAYMENT HISTORY</ion-card-title>
+    </ion-card-header>
+
+    <ion-list lines="full">
+      <ion-item *ngFor="let payment of paymentHistory" class="payment-item">
+        <ion-icon name="location" slot="start"></ion-icon>
+        <ion-label>
+          <h2>{{ payment.location }}</h2>
+          <p>Date: {{ payment.date | date: 'medium' }}</p>
+          <p>Power Input: {{ payment.powerInput }} kW</p>
+          <p class="amount">Amount Paid: ${{ payment.amount }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
