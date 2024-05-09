@@ -1,26 +1,99 @@
-ion-content {
-    ion-padding {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  
-    form {
-      ion-item {
-        margin-bottom: 16px;
-      }
-  
-      ion-button {
-        margin-top: 16px;
-      }
-    }
-  
-    .ion-text-center {
-      margin-top: 16px;
-  
-      a {
-        color: #3880ff;
-        text-decoration: underline;
-      }
-    }
-  }
-  
+/* Container for login elements */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f9fa; /* Light gray */
+}
+
+/* Styling for Login Card */
+.login-card {
+  position: relative;
+  top: 20%;
+  left: 0%;
+  max-width: 350px;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White */
+}
+
+/* Styling for Login Header */
+.login-header {
+  height: 70px;
+  background-color: #ff6b6b; /* Coral */
+  border-radius: 10px 10px 0 0;
+}
+
+/* Styling for Login Title */
+.login-title {
+  color: #fff; /* White */
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+/* Styling for Login Content */
+.login-content {
+  padding: 20px;
+}
+
+/* Styling for Input Fields */
+.input-field {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for Login Button */
+.login-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #ffa94d; /* Mustard */
+  color: #de0909; /* White */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+}
+
+/* Styling for Forgot Password Link */
+.forgot-password-link {
+  padding-top: 50%;
+  color: #007bff; /* Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password-link:hover {
+  padding-top: 20%;
+  text-decoration: underline;
+}
+
+/* Styling for Sign Up Link */
+.signup-link {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #dc3545; /* Red */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect for login card */
+.login-card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  transition: transform 0.3s ease;
+}
+.text1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  font: weight 400px;;
+}

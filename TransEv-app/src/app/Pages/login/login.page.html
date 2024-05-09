@@ -1,40 +1,31 @@
-<ion-header>
-  <ion-toolbar color="#FFF">
-    <ion-title>
-      <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
-  <ion-card>
-    <ion-card-header>
-      <ion-title class="ion-text-center">Login</ion-title>
+  <ion-card class="login-card">
+    <ion-card-header class="login-header">
+      <ion-title class="ion-text-center login-title">Login</ion-title>
     </ion-card-header>
 
-    <ion-card-content>
-      <form (ngSubmit)="login()">
-        <ion-item>
-          <ion-label position="floating">Username</ion-label>
-          <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+    <ion-card-content class="login-content">
+      <form (ngSubmit)="login()" class="login-form">
+        <ion-item lines="none" class="login-input">
+          <ion-label position="floating" class="input-label">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" name="username" required class="input-field"></ion-input>
         </ion-item>
 
-        <ion-item>
-          <ion-label position="floating">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+        <ion-item lines="none" class="login-input">
+          <ion-label position="floating" class="input-label">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" required class="input-field"></ion-input>
         </ion-item>
 
-        <ion-button expand="full" type="submit" color="primary">Login</ion-button>
+        <ion-button expand="full" type="submit" color="primary" class="login-button">Login</ion-button>
       </form>
 
-      <div class="ion-text-center">
-        <p><a routerLink="/forget-password">Forgot Password?</a></p>
+      <div class="ion-text-center forgot-password">
+        <a routerLink="/forget-password" class="forgot-password-link">Forgot Password?</a>
+      </div>
+
+      <div class="ion-text-center signup-link">
+        <p class="text1">New user? <a routerLink="/signup" class="signup-link">Sign up here</a></p>
       </div>
     </ion-card-content>
   </ion-card>
-
-  <div class="ion-text-center">
-    <p>New user? <a routerLink="/signup">Sign up here</a></p>
-  </div>
 </ion-content>
- 

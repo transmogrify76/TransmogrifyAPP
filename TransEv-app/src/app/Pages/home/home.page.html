@@ -1,40 +1,40 @@
 <ion-header>
-  <ion-toolbar color="light">
+  <ion-toolbar class="custom-toolbar">
     <ion-title>
-      <img src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
+      <img class="logo" src="https://transev.in/wp-content/uploads/2023/07/logo-160x57.png" alt="EV Charging Solutions">
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-card>
-    <img src="https://www.technotification.com/wp-content/uploads/2021/07/electric-car.jpg" alt="Charging Station">
-    <ion-card-header>
-      <ion-title class="ion-text-center">Welcome to TransEV Charging Solutions</ion-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p class="ion-text-center">Discover convenient and sustainable charging options for your electric vehicle.</p>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-list>
-    <ion-item button routerLink="/stations">
-      <ion-icon name="car-charging-outline" slot="start"></ion-icon>
+<ion-content class="ion-padding custom-content">
+  <div class="welcome-container">
+    <ion-card class="welcome-card">
+      <img src="../../../assets/1689757170509.jpg" alt="Charging Station">
+      <ion-card-header class="welcome-header">
+        <ion-title class="ion-text-center">Welcome to TransEV Charging Solutions</ion-title>
+      </ion-card-header>
+      <ion-card-content class="welcome-content">
+        <p class="ion-text-center">Discover convenient and sustainable charging options for your electric vehicle.</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-list class="home_list">
+    <ion-item button routerLink="/stations" lines="none" class="list-item primary-color">
+      <ion-icon name="search" slot="start"></ion-icon>
       Find Charging Stations
     </ion-item>
     
-    <ion-item button routerLink="/map">
+    <ion-item button routerLink="/map" lines="none" class="list-item secondary-color">
       <ion-icon name="map-outline" slot="start"></ion-icon>
       Charging Station Map
     </ion-item>
   </ion-list>
 
-  <!-- Sign-up and Login Buttons -->
   <div class="button-container">
-    <ion-button expand="full" color="secondary" routerLink="/login">
+    <ion-button color="custom-red" class="button1" routerDirection="forward" routerLink="/login">
       Login
     </ion-button>
-    <ion-button expand="full" color="primary" routerLink="/signup">
+    <ion-button  color="custom-red" class="button2" routerDirection="forward" routerLink="/signup">
       Sign Up
     </ion-button>
   </div>

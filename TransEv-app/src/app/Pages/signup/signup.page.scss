@@ -1,29 +1,61 @@
-ion-card {
-    margin-bottom: 20px;
+// styles.scss
+
+// Custom styling for welcome container
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+// Custom styling for welcome card
+.welcome-card {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  img {
+    border-radius: 15px 15px 0 0;
   }
-  
-  ion-card-header {
-    ion-title {
-      font-size: 1.5em;
-      font-weight: bold;
+}
+
+// Custom styling for welcome header
+.welcome-header {
+  background-color: #3f51b5; // Indigo color
+  border-radius: 15px 15px 0 0;
+}
+
+// Custom styling for welcome content
+.welcome-content {
+  padding: 20px;
+  background-color: #f5f5f5; // Light Grey color
+  border-radius: 0 0 15px 15px;
+}
+
+// Custom styling for list items
+.custom-list {
+  ion-item {
+    background-color: #ffffff; // White color
+    border-radius: 10px;
+    ion-icon {
+      color: #4CAF50; // Green color
     }
   }
-  
-  ion-list {
-    margin-bottom: 20px;
-  }
-  
-  ion-button {
-    margin-top: 10px;
-  }
-  
-  .ion-text-center {
-    text-align: center;
-    margin-top: 16px;
-  
-    a {
-      color: #3880ff;
-      text-decoration: underline;
+}
+
+// Custom styling for funky buttons
+.button-container {
+  ion-button.funky-button {
+    margin-top: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #3f51b5; // Indigo color
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adding shadow
+    ion-label {
+      color: #ffffff; // White color
+    }
+    &:hover {
+      transform: translateY(-2px); // Adding subtle hover animation
     }
   }
-  
+}
