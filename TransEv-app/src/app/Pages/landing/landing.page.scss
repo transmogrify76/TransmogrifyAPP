@@ -1,19 +1,30 @@
-ion-card {
-    margin-bottom: 20px;
-  }
-  
-  ion-card-header {
-    ion-title {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-  }
-  
-  ion-card-content {
-    text-align: center;
-  }
-  
-  ion-button {
-    margin-top: 20px;
-  }
-  
+// Custom Colors
+$custom-blue: #3498db; // Dodger Blue
+
+// Custom Styles
+.welcome-container {
+  display: flex;
+  margin-top: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-card {
+  margin-top: 40%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.custom-button {
+  border-radius: 15px;
+}
+.landingbutton{
+  margin-left: 29%;
+  width: 40%;
+  border-radius:0%;
+}
+

@@ -3,7 +3,7 @@
 <ion-menu side="start" contentId="main-content">
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Hi,User !</ion-title>
+      <ion-title class="getstarted">Hi,User !</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
@@ -67,7 +67,7 @@
       <!-- Open the side menu when this button is clicked -->
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title class="getstarted">
       Get Started
     </ion-title>
   </ion-toolbar>
@@ -82,7 +82,7 @@
 
     <!-- Add other search criteria if needed -->
 
-    <ion-button expand="full" type="submit" color="primary">Search Charging Stations</ion-button>
+    <ion-button class="getbutton" type="submit" >Search Charging Stations</ion-button>
   </form>
 
   <!-- Display search results -->
@@ -96,6 +96,12 @@
 
   <!-- Display a message if no charging stations are found -->
   <div *ngIf="chargingStations && chargingStations.length === 0" class="ion-text-center">
-    <p>No charging stations found in the provided location.</p>
+    <p>11F, 04, Street Number 372, Action Area I, IIF, New Town, Chakpachuria, West Bengal 700156</p>
+  </div>
+
+  <!-- Dummy map -->
+  <div class="dummy-map">
+    <img src="../../../assets/Screenshot 2024-05-10 093117.png" alt="Dummy Map" />
+    
   </div>
 </ion-content>

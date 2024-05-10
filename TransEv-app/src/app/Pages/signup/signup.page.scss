@@ -1,61 +1,86 @@
-// styles.scss
-
-// Custom styling for welcome container
-.welcome-container {
+/* Container for signup elements */
+.signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100%;
+  background-color: #f8f9fa; /* Light gray */
 }
 
-// Custom styling for welcome card
-.welcome-card {
-  width: 90%;
-  max-width: 400px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  img {
-    border-radius: 15px 15px 0 0;
-  }
+/* Styling for Signup Card */
+.signup-card {
+  position: relative;
+  top: 20%;
+  left: 0%;
+  max-width: 350px;
+  width: 95%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White */
 }
 
-// Custom styling for welcome header
-.welcome-header {
-  background-color: #3f51b5; // Indigo color
-  border-radius: 15px 15px 0 0;
+/* Styling for Signup Header */
+.signup-header {
+  height: 70px;
+  background-color: #ff6b6b; /* Coral */
+  border-radius: 10px 10px 0 0;
 }
 
-// Custom styling for welcome content
-.welcome-content {
+/* Styling for Signup Title */
+.signup-title {
+  color: #fff; /* White */
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+/* Styling for Signup Content */
+.signup-content {
   padding: 20px;
-  background-color: #f5f5f5; // Light Grey color
-  border-radius: 0 0 15px 15px;
 }
 
-// Custom styling for list items
-.custom-list {
-  ion-item {
-    background-color: #ffffff; // White color
-    border-radius: 10px;
-    ion-icon {
-      color: #4CAF50; // Green color
-    }
-  }
+/* Styling for Input Fields */
+.input-field {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Rounded corners */
 }
 
-// Custom styling for funky buttons
-.button-container {
-  ion-button.funky-button {
-    margin-top: 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    background-color: #3f51b5; // Indigo color
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adding shadow
-    ion-label {
-      color: #ffffff; // White color
-    }
-    &:hover {
-      transform: translateY(-2px); // Adding subtle hover animation
-    }
-  }
+/* Styling for Signup Button */
+.signup-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #007bff; 
+  color: #fff; /* White */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+}
+
+/* Styling for Sign Up Link */
+.signup-link {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.signup-link a {
+  color: #dc3545; /* Red */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect for signup card */
+.signup-card:hover {
+  transform: translateY(-5px); /* Lift card slightly on hover */
+  transition: transform 0.3s ease;
+}
+.text1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  font: weight 400px;;
 }

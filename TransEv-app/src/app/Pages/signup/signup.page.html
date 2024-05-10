@@ -1,39 +1,35 @@
-
-<ion-content class="ion-padding">
+<ion-content class="ion-padding signup-container">
   <ion-card class="signup-card">
-    <ion-card-header>
+    <ion-card-header class="signup-header">
       <ion-title class="ion-text-center signup-title">Sign Up</ion-title>
     </ion-card-header>
 
-    <ion-card-content>
+    <ion-card-content class="signup-content">
       <form #signupForm="ngForm" (ngSubmit)="signup()" novalidate>
 
-        <ion-list>
-          <ion-item>
-            <ion-label position="floating">Full Name</ion-label>
-            <ion-input type="text" [(ngModel)]="fullName" name="fullName" required class="input-field"></ion-input>
-          </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating">Full Name</ion-label>
+          <ion-input type="text" [(ngModel)]="fullName" name="fullName" required class="input-field"></ion-input>
+        </ion-item>
 
-          <ion-item>
-            <ion-label position="floating">Email</ion-label>
-            <ion-input type="email" [(ngModel)]="email" name="email" required email class="input-field"></ion-input>
-          </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" required email class="input-field"></ion-input>
+        </ion-item>
 
-          <ion-item>
-            <ion-label position="floating">Password</ion-label>
-            <ion-input type="password" [(ngModel)]="password" name="password" required minlength="8" class="input-field"></ion-input>
-          </ion-item>
-        </ion-list>
+        <ion-item lines="none">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" required minlength="8" class="input-field"></ion-input>
+        </ion-item>
 
-        <div class="ion-text-center">
-          <ion-button expand="full" color="primary" type="submit" [disabled]="!signupForm.valid" class="signup-button">Sign Up</ion-button>
-        </div>
+        <ion-button expand="full" color="custom-red" type="submit" [disabled]="!signupForm.valid" class="signup-button">Sign Up</ion-button>
 
       </form>
+      <div class="ion-text-center signup-link">
+        <p>Already have an account? <a routerLink="/login">Login here</a></p>
+      </div>
     </ion-card-content>
   </ion-card>
 
-  <div class="ion-text-center">
-    <p>Already have an account? <a routerLink="/login">Login here</a></p>
-  </div>
+ 
 </ion-content>
