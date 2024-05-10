@@ -9,6 +9,11 @@ export class WalletPage {
   balance: number = 1000; // Replace with actual logic to fetch wallet balance
 
   constructor() {
+    
     // Implement logic to fetch wallet information from your backend or storage
+  }
+  addMoney(amount: number) {
+    // Logic to add the specified amount to the wallet balance
+    this.balance += amount;
   }
 }

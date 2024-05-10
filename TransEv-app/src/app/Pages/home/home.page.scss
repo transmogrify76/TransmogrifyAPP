@@ -12,6 +12,7 @@ $background-color: #bb2214; // Light Yellowish
 
 .custom-content {
   background-color: $background-color;
+  padding: 20px;
 }
 
 .welcome-container {
@@ -21,42 +22,55 @@ $background-color: #bb2214; // Light Yellowish
 .welcome-card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-header {
-  --ion-color-base: $custom-teal;
-}
-
-.welcome-content {
-  color: $custom-teal;
+  width: 100%;
+  max-width: 400px; // Limit maximum width
+  margin: auto; // Center align the card
 }
 
 .button-container {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.button2 {
-  margin-left: 18%;
-  background-color: #1a94d5;
-  border-radius: 15px;
+.button1, .button2 {
   margin-bottom: 10px;
-  width: 250px;
-}
-.button1 {
-  margin-left: 18%;
-  background-color:   #dc3545;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  width: 250px;
+  width: 80%; // Adjust button width
+  max-width: 250px; // Limit maximum width
 }
 
 .ion-text-center {
   margin-top: 20px;
 }
-.logo{
-  margin-top: 10%;
+
+.logo {
+  margin-top: 10px; // Adjust margin-top
+  width: 80%; // Adjust logo width
+  max-width: 200px; // Limit maximum width
 }
-.home_list{
-  margin-left: 12%;
+
+.home_list {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.list-item {
+  width: 80%;
+  max-width: 300px; // Limit maximum width
+  margin: 0 auto; // Center align the list items
+}
+.button2 {
+  
+  background-color: #1a94d5;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.button1 {
+  
+  background-color:   #dc3545;
+  border-radius: 15px;
+  margin-bottom: 10px;
   width: 80%;
 }
