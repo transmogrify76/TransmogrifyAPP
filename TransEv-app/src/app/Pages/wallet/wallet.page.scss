@@ -53,3 +53,22 @@ ion-content {
   --ion-background-color: #007bff; /* Primary color */
   --border-radius: 5px;
 }
+ion-button {
+  margin-bottom: 10px;
+}
+
+.payment_button{
+  width: 100%;
+  max-width: 300px; /* Adjust max-width as per your design */
+  margin: 0 auto; /* Center align the button */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
